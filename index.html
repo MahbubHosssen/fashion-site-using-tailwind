@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fasion</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .bebas-font {
+            font-family: "Bebas Neue", sans-serif;
+        }
+        .roboto-font {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="roboto-font">
+    <header class="bg-[#FFFBF0]">
+        <nav class="flex justify-between max-w-7xl m-auto py-12">
+            <div class="w-72">
+                <img class="w-full" src="./icons/logo.png" alt="">
+            </div>
+            <ul class="flex gap-10 font-medium roboto-font text-[#3C3C3C]">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center justify-between max-w-7xl m-auto">
+            <div>
+                <h1 class="text-7xl"><span class="text-orange-400">Be the Penguins</span> 
+                    <br>
+                    <span class="text-[#363958]">of Winter</span>
+                </h1>
+                <p class="text-[#3E3E3E] py-5 w-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-2 px-5 rounded-lg font-medium text-white">BUY NOW</button>
+            </div>
+            <div class="pr-16">
+                <img src="./images/model.png" alt="">
+            </div>
+        </div>
+    </header>
 </body>
 </html>
